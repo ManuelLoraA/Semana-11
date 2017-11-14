@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manuel Aguasvivas</title>
+	<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Links de Bootstrap y CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheetwork.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- Smooth Scroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<!-- NAVBAR -->
+  <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-light p-4">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+          <img class="brand-img" src="images/logo.png">
+          </a>
+          </button>
+            <div>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">Inicio</a>
+                <a class="nav-item nav-link" href="bio.html">Bio</a>
+                <a class="nav-item nav-link" href="#">Trabajos</a>
+                <a class="nav-item nav-link" href="#">Contacto</a>
+              </div>
+            </div>
+        </nav>
+        </div>
+      </div>
+  <nav class="navbar navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+<!-- NAVBAR ENDS -->
+
+<!-- PORTFOLIO CONTENT -->
+
+<div class="container por">
+  <h2 class="portitle">Portafolio</h2>
+  <div class="row poralign">
+    <div class="col-md-6">
+      <img class="porimg" src="images/conde-1.png">
+      <h3 class="portext">El conde</h3>
+    </div>
+    <div class="col-md-6">
+        <img class="porimg" src="images/crunchyroll.png">
+        <h3 class="portext">Crunchyroll Landing-Page<br>Para Rusia</h3>
+      </button>
+    </div>
+  </div>
+
+  <div class="row poralign">
+    <div class="col-md-6">
+      <img class="porimg" src="images/correo-3.png">
+      <h3 class="portext">Social Media<br>Crunchyroll</h3>
+    </div>
+    <div class="col-md-6">
+      <img class="porimg" src="images/blackclover.png">
+      <h3 class="portext">Landing-Page<br> Black Clover</h3>
+    </div>
+  </div>
+
+  <div class="row poralign">
+    <div class="col-md-6">
+      <img class="porimg" src="images/alfonsina.png">
+      <h3 class="portext">Sesión Privada<br>de fotos</h3>
+    </div>
+    <div class="col-md-6">
+      <img class="porimg" src="images/odyssey.png">
+      <h3 class="portext">Super Mario Odyssey<br>Pre-order Site</h3>
+    </div>
+  </div>
+</div>
+
+
+<!-- Scripts principales Bootstrap y JS -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  
+  <!-- Smooth Scroll -->
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+</body>

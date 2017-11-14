@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manuel Aguasvivas</title>
+	<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Links de Bootstrap y CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheetbio.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- Smooth Scroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<!-- NAVBAR -->
+  <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html">
+          <img class="brand-img" src="images/whitelogo.png">
+          </a>
+          </button>
+            <div>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">inico</a>
+                <a class="nav-item nav-link" href="#">Bio</a>
+                <a class="nav-item nav-link" href="work.html">Trabajos</a>
+                <a class="nav-item nav-link" href="#">Contacto</a>
+              </div>
+            </div>
+        </nav>
+        </div>
+      </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+<!-- NAVBAR ENDS -->
+
+<!-- BIO CONTENT -->
+
+<div class="container bio">
+  <h2 class="biotitle">Biography</h2>
+  <p class="biotext"><span class="resaltar">Manuel Aguasvivas</span> es un <span class="resaltar">fotógrafo</span>, <span class="resaltar">comunicador visual</span> y <span class="resaltar">diseñador de UX</span> radicado en Santo Domingo, República Dominicana.
+  Inició sus estudios de comunicación en Altos de Chavón, La escuela de Diseño, de 2016-2018. Terminando más tarde su grado en la Escola Superior d'imatge i Desseny de Barcelona (IDEP), especializandose en Diseño de Experiencia de Usuario.
+  <br><br>
+  Considero que el diseño interactivo es el fututo del diseño. No hay nada más asombroso que interactuar con las cosas que usamos cada día, no solo con websites o apps, también con nuestro escritorio de trabajo o con el supermercado donde compramos regularmente. Es mi meta como profesional que todo lo que usemos aprenda de nosotros e interactúe con nosotros, para tener siempre una nueva y mejor experiencia.
+  <br><br>
+  Su trabajo ha recorrido todo el mundo porque sí, <span class="joke">gracias.</span>
+  <br><br>
+    <span class="bigger">Contact:</span><br>
+    +1 849 360 0416<br>
+    manuel.lora04@gmail.com<br>
+    <br>
+    <span class="bigger">Social:</span><br>
+    <a class="socials" href="#">Instagram</a><br>
+    <a class="socials" href="#">Twitter</a><br>
+    <br>
+    <span class="bigger">Design and build:</span><br>
+    Me, Myself and I<br>
+  </p>
+</div>
+
+
+<!-- Scripts principales Bootstrap y JS -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  
+  <!-- Smooth Scroll -->
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+</body>

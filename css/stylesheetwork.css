@@ -1,0 +1,95 @@
+/*NAVBAR*/
+body{
+    background-color: rgba(128, 128, 128, 0.04);
+}
+.navbar {
+    position: relative;
+    z-index: 1000;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.pos-f-t{
+    position: absolute;
+}
+
+.nav2{
+	margin-top: 20px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+  
+}
+
+.bg-light {
+    background-color: transparent!important;
+}
+
+.brand-img{
+    width: 65px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #00fe1e;
+}    
+
+
+/*POR STYLES*/
+.por{
+    position: absolute;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+
+}
+
+.poralign{
+    width: 750px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 160px;
+    text-align: center;
+}
+
+.portitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+    margin-top: 160px;
+    position: fixed;
+}
+
+.portext{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.porimg{
+    width: 100%;
+}
+
+.button{
+    background-color: transparent;
+    border: none;
+}
